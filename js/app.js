@@ -43,7 +43,13 @@ const game = {
 	// 2. write this function
 	showCharacters: function() {
 		for(let i = 0; i < characters.length; i++) {
-			return characters[ Math.floor( Math.random() * characters.length) ) ];
+			randomChar = characters[ Math.floor( Math.random() * characters.length) ) ]
+			return game.charBuilder(randomChar);
+			charBuilder: () => {
+				let elementName = document.createElement('')
+				elementName.classList.add('')
+			}
+			
 		}
 		  // loop
 			// add to HTML

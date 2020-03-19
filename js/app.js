@@ -10,7 +10,7 @@ console.log("Guess Who");
 //1. create this array of 6 characters
 const characters = [{
 	name: "Michael",
-	imgLink: "https://www.collegemagazine.com/wp-content/uploads/2018/04/Michael-Scott.png",
+	imgLink: "https://img2.looper.com/img/gallery/the-funniest-michael-scott-quotes-from-the-office/michael-scott-declares-bankruptcy-1566232193.jpg",
 	clues: [" You miss 100 percent of the shots you don't take'", " You know what? I'm gonna start dating her even harder","If I had a gun with two bullets and I was in a room with Hitler, Bin Laden and Toby, I would shoot Toby twice"]
 }, {
 	name: "Pam",
@@ -38,44 +38,32 @@ const characters = [{
 
 
 const game = {
-	character: characters[i],
+	character: null,
 
 	// 2. write this function
 	showCharacters: function() {
 		for(let i = 0; i < characters.length; i++) {
-			randomChar = characters[ Math.floor( Math.random() * characters.length) ) ]
-			return game.charBuilder(randomChar);
-			charBuilder: () => {
-				let elementName = document.createElement('')
-				elementName.classList.add('')
-			}
-			
-		}
-		  // loop
-			// add to HTML
+			//randomChar = characters[Math.floor(Math.random() * characters.length)];
 
-
-
-
-
+			//let div = document.createElement('<imgLink/>')  -- review how to create a div
+			div.classList.add('front-side')
+		
+		}	
 	},
 
-	// 3. write this function
+	// getDeck: function() {
+	// 	const deck = new Array();
+	// 	for(let i = 0; i < characters.length; i++) {
+
+	// 	}
+	// },
+		  // 3. write this function
 	getRandomCharacter: function() {
-		for(let i in characters) {
-		let randomIndex = characters[Math.floor(Math.random() * characters.length)];
-		character.push(characters[randomIndex]);
+			let randomIndex = characters[Math.floor(Math.random() * characters.length)];
+			characters.splice(randomIndex, 1)[0];
+			$("#div").attr("", character);
 
-		}
-		// pick a char from array
-
-		// store in character property above
+			// character.push(characters[randomIndex])		
 	}
 
-}
-
-	
-// each character is an object
-// name, picture link, a bunch of clues
-
-
+}			

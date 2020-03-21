@@ -37,33 +37,20 @@ const characters = [{
 
 
 
-const game = {
-	character: null,
+// const game = {
+// 	character: null,
 
-	// 2. write this function
-	showCharacters: function() {
-		for(let i = 0; i < characters.length; i++) {
-			//randomChar = characters[Math.floor(Math.random() * characters.length)];
+// 	let display = document.querySelector('.display');
+// let guessQuerySelector = document.querySelector('#character');
+// let textForm = document.querySelector('.textForm');
+// randomCharacter: null,
 
-			//let div = document.createElement('<imgLink/>')  -- review how to create a div
-			div.classList.add('front-side')
-		
-		}	
-	},
 
-	// getDeck: function() {
-	// 	const deck = new Array();
-	// 	for(let i = 0; i < characters.length; i++) {
 
-	// 	}
-	// },
-		  // 3. write this function
-	getRandomCharacter: function() {
-			let randomIndex = characters[Math.floor(Math.random() * characters.length)];
-			characters.splice(randomIndex, 1)[0];
-			$("#div").attr("", character);
-
-			// character.push(characters[randomIndex])		
-	}
-
-}			
+// // Grabbing Random Word
+// getRandomWord = function() {
+//   const randomIndex = Math.floor(Math.random() * characters.length);
+// 			const character = characters[randomIndex];
+// 			this.randomCharacter = characters.name;
+// 			console.log(this.randomCharacter);
+// }
